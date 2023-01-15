@@ -14,7 +14,7 @@ ul {
     list-style: none;
 }
 
-a {
+ul a {
     text-decoration: 0;
     color: #E5E7EB;
 }
@@ -42,10 +42,12 @@ button {
 
 .header {
     flex-basis: 100%;
-    max-width: 1000px;
+    margin: 0 15vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 4px;
     margin-bottom: 100px;
 }
 
@@ -53,35 +55,52 @@ button {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: 600;
+    text-align: center;
 }
 
 .header-links {
     display: flex;
     gap: 24px;
+    text-align: center;
 }
 
 .hero {
     flex-basis: 100%;
-    max-width: 1000px;
+    margin: 0 15vw;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
     margin-bottom: 100px;
 }
 
 .hero-left {
-    flex-basis: 45%;
+    min-width: 300px;
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 16px;
 }
 
 .hero-right {
-    background-color: gray;
-    flex-basis: 55%;
+    min-width: 300px;
+    flex: 1 1 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 4px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    text-align: center;
+}
+
+.hero-img-credit a{
+    color: rgb(223, 177, 93);
 }
 
 .hero-main-txt {
@@ -92,7 +111,6 @@ button {
 
 /* information section content */
 .info {
-    height: 50vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -103,6 +121,8 @@ button {
     color: #1F2937;
     font-size: 36px;
     font-weight: 800;
+    text-align: center;
+    padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
