@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
 
 /* site wide styles */
 * {
@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100vw;
     margin: 0;
     font-family: Roboto, san-serif;
     box-sizing: border-box;
@@ -111,6 +111,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+    margin-bottom: 100px;
 }
 
 .info-header {
@@ -150,4 +151,26 @@ button {
     color: gray;
     font-size: 16px;
     text-align: center;
+}
+
+/* testimonial section styles */
+.testimonial {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 20vh 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote {
+    margin: 0 auto;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.author {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
 }
